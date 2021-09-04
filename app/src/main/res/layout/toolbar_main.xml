@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:gravity="center|center_horizontal|center_vertical|end">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|center_horizontal|center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Danh sách công việc"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!--                        <ImageView-->
+                    <!--                            android:id="@+id/kiemtra_tiendo_new"-->
+                    <!--                            android:layout_width="24dp"-->
+                    <!--                            android:layout_height="24dp"-->
+                    <!--                            android:layout_gravity="center|center_horizontal|center_vertical"-->
+                    <!--                            android:layout_marginStart="4dp"-->
+                    <!--                            android:layout_marginEnd="8dp"-->
+                    <!--                            android:layout_weight="0"-->
+                    <!--                            android:visibility="visible"-->
+                    <!--                            app:srcCompat="@drawable/ic_search_new" />-->
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/send_data"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center|center_horizontal|center_vertical"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_cscv_send" />
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/addnew_phieu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center|center_horizontal|center_vertical"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/icnew_add_bongden_white" />
+                        <!--            <CheckedTextView-->
+                        <!--                android:id="@+id/switch_button"-->
+                        <!--                android:layout_width="48dp"-->
+                        <!--                android:layout_height="24dp"-->
+                        <!--                android:layout_gravity="center|center_horizontal|center_vertical"-->
+                        <!--                android:background="@drawable/ic_my_switch"-->
+                        <!--                android:gravity="center|end" />-->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

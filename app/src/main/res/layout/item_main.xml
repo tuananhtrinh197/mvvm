@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="itemViewModel"
+            type="com.example.mvvm_dev.ViewModel."/>
+    </data>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textDocEntry"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_alignParentStart="true"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginStart="0dp"-->
+            <!--                android:layout_marginTop="-1dp"-->
+            <!--                android:layout_marginBottom="0dp"-->
+            <!--                android:background="@color/colorPrimary"-->
+            <!--                android:gravity="center"-->
+            <!--                android:minWidth="100dp"-->
+            <!--                android:text="0000000"-->
+            <!--                android:textColor="@color/iColorLight"-->
+            <!--                android:textStyle="italic" />-->
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center|start"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_below="@+id/textDate"
+                android:id="@+id/view8"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/colorPrimary" />
+            <TableLayout
+                android:layout_below="@+id/view8"
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="1, 3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Người xử lý:"
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/tv_nguoixuly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="TextView"
+                        android:textColor="#000" />
+
+                    <!--                <ImageView-->
+                    <!--                    android:id="@+id/imageView17"-->
+                    <!--                    android:layout_width="20dp"-->
+                    <!--                    android:layout_height="20dp"-->
+                    <!--                    app:tint="@color/colorPrimary"-->
+                    <!--                    app:srcCompat="@drawable/ic_cscv_image" />-->
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="4dp"
+                        android:text="Ngày tạo:"
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/tv_ngaytao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="TextView"
+                        android:textColor="#000" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Tình trạng duyệt:"
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/tv_tinhtrangduyet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="TextView"
+                        android:textColor="#000" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:height="20dp"
+                        android:drawablePadding="4dp"
+                        android:text="Trạng thái callog:"
+                        android:textColor="#424242" />
+
+                    <TextView
+                        android:id="@+id/tv_trangthaicallog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="TextView"
+                        android:textColor="#000" />
+
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
