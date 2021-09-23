@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="android.graphics.Color"/>
+        <variable
+            name="itemViewModel"
+            type="com.example.mvvm_dev.viewModel.ItemMainViewModel"/>
+    </data>
+
+
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/fam"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_input_kiemtratiendo"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="01/012019"
+            android:textColor="@color/black" >
+            <LinearLayout
+                android:id="@+id/layout_top"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:padding="3dp"
+                    android:src="@drawable/icnew_image"
+                    android:scaleType="fitXY"
+                    android:id="@+id/image"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ImageView>
+                <RelativeLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toLeftOf="@+id/tv_nearCheckbox"
+                        android:id="@+id/checkbox"
+                        android:src="@drawable/check_box_true"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"></ImageView>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/tv_nearCheckbox"
+                        android:text="Đã up ảnh"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:layout_below="@+id/checkbox"
+                        android:layout_marginTop="3dp"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/hangmuc"
+                        android:text="Hạng mục:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:layout_below="@+id/checkbox"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/hangmuc"
+                        android:id="@+id/tv_hangmuc"
+                        android:text="Kệ trưng bày siro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:layout_below="@+id/hangmuc"
+                        android:layout_marginTop="3dp"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/mota"
+                        android:text="Mô tả:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:layout_below="@+id/hangmuc"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_toRightOf="@+id/mota"
+                        android:id="@+id/tv_mota"
+                        android:text="Kệ trung bày siro ho cho trẻ em -trung bay 5 chai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/tv_mota"
+                        android:id="@+id/lydo"
+                        android:text="Lý do:"
+                        android:textColor="@color/red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="38dp"
+                        android:layout_below="@+id/tv_mota"
+                        android:id="@+id/tv_lydo"
+                        android:text="Ảnh chụp không giống mẫu"
+                        android:layout_toRightOf="@+id/lydo"
+                        android:textColor="@color/red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginStart="5dp"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:text="Xem ảnh mẫu"
+                        android:textColor="@color/white"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/btn_xemanh"
+                        android:background="@drawable/background_blue"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/btn_xemanh"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginStart="10dp"
+                        android:padding="3dp"
+                        android:text="Chụp ảnh"
+                        android:textColor="@color/white"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/btn_chupanh"
+                        android:background="@drawable/background_blue"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/ghichu"
+                    android:layout_alignParentLeft="true"
+                    android:text="Ghi chú:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <Spinner
+                    android:background="@drawable/border_edit_sp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="65dp"
+                    android:layout_toRightOf="@+id/ghichu"
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_below="@+id/spinner"
+                    android:hint="Ghi chú khác"
+                    android:id="@+id/messageDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_gravity="center"
+                    android:paddingStart="4dp"
+                    android:singleLine="false"
+                    android:background="@drawable/edittext_input"
+                    android:textSize="14sp"
+                    android:ems="10"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</layout>

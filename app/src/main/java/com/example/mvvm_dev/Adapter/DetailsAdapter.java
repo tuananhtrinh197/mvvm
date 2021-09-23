@@ -2,24 +2,24 @@ package com.example.mvvm_dev.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mvvm_dev.Model.Data_GetInfoCLPharmacy;
+import com.example.mvvm_dev.databinding.ItemDetailsBinding;
 import com.example.mvvm_dev.databinding.ItemMainBinding;
 import com.example.mvvm_dev.viewModel.ItemMainViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> {
+public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.MyViewHolder> {
     Context context;
     List<Data_GetInfoCLPharmacy> detailist = new ArrayList<>();
     // Delete delete_;
-    public MainAdapter(Context context, List<Data_GetInfoCLPharmacy> detailist) {
+    public DetailsAdapter(Context context, List<Data_GetInfoCLPharmacy> detailist) {
         this.detailist = detailist;
         this.context = context;
     }
@@ -35,7 +35,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int i) {
 
-        return new MyViewHolder(ItemMainBinding.inflate(LayoutInflater.from(context),parent,false));
+        return new MyViewHolder(ItemDetailsBinding.inflate(LayoutInflater.from(context),parent,false));
     }
 
     @Override
@@ -57,8 +57,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private final ItemMainBinding binding;
-        public MyViewHolder(final ItemMainBinding itemBinding) {
+        private final ItemDetailsBinding binding;
+        public MyViewHolder(final ItemDetailsBinding itemBinding) {
             super(itemBinding.getRoot());
             this.binding = itemBinding;
             //binding.executePendingBindings();
@@ -73,5 +73,3 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
         }
     }
 }
-
-

@@ -1,4 +1,4 @@
-package com.example.mvvm_dev.ViewModel;
+package com.example.mvvm_dev.viewModel;
 
 import android.content.Context;
 

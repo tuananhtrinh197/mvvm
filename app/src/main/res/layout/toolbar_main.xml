@@ -53,38 +53,38 @@
                     <!--                            android:visibility="visible"-->
                     <!--                            app:srcCompat="@drawable/ic_search_new" />-->
 
-                    <ImageView
-                        android:visibility="gone"
-                        android:id="@+id/send_data"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="center|center_horizontal|center_vertical"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_weight="0"
-                        app:srcCompat="@drawable/ic_cscv_send" />
-                    <LinearLayout
-                        android:visibility="visible"
-                        android:id="@+id/addnew_phieu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent">
-                        <ImageView
-                            android:visibility="gone"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_gravity="center|center_horizontal|center_vertical"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_weight="0"
-                            app:srcCompat="@drawable/icnew_add_bongden_white" />
-                        <!--            <CheckedTextView-->
-                        <!--                android:id="@+id/switch_button"-->
-                        <!--                android:layout_width="48dp"-->
-                        <!--                android:layout_height="24dp"-->
-                        <!--                android:layout_gravity="center|center_horizontal|center_vertical"-->
-                        <!--                android:background="@drawable/ic_my_switch"-->
-                        <!--                android:gravity="center|end" />-->
-                    </LinearLayout>
+                    <!--                    <ImageView-->
+                    <!--                        android:visibility="gone"-->
+                    <!--                        android:id="@+id/send_data"-->
+                    <!--                        android:layout_width="24dp"-->
+                    <!--                        android:layout_height="24dp"-->
+                    <!--                        android:layout_gravity="center|center_horizontal|center_vertical"-->
+                    <!--                        android:layout_marginStart="4dp"-->
+                    <!--                        android:layout_marginEnd="8dp"-->
+                    <!--                        android:layout_weight="0"-->
+                    <!--                        app:srcCompat="@drawable/ic_cscv_send" />-->
+                    <!--                    <LinearLayout-->
+                    <!--                        android:visibility="visible"-->
+                    <!--                        android:id="@+id/addnew_phieu"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="match_parent">-->
+                    <!--                        <ImageView-->
+                    <!--                            android:visibility="gone"-->
+                    <!--                            android:layout_width="24dp"-->
+                    <!--                            android:layout_height="24dp"-->
+                    <!--                            android:layout_gravity="center|center_horizontal|center_vertical"-->
+                    <!--                            android:layout_marginStart="4dp"-->
+                    <!--                            android:layout_marginEnd="8dp"-->
+                    <!--                            android:layout_weight="0"-->
+                    <!--                            app:srcCompat="@drawable/icnew_add_bongden_white" />-->
+                    <!--                        &lt;!&ndash;            <CheckedTextView&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                android:id="@+id/switch_button"&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                android:layout_width="48dp"&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                android:layout_height="24dp"&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                android:layout_gravity="center|center_horizontal|center_vertical"&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                android:background="@drawable/ic_my_switch"&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                android:gravity="center|end" />&ndash;&gt;-->
+                    <!--                    </LinearLayout>-->
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

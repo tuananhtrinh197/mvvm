@@ -10,4 +10,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00FFF000</color>
     <color name="colorAccent">#225689</color>
+    <color name="red">#F44336</color>
 </resources>

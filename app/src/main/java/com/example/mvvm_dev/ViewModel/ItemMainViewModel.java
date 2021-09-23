@@ -1,4 +1,4 @@
-package com.example.mvvm_dev.ViewModel;
+package com.example.mvvm_dev.viewModel;
 
 import android.content.Context;
 import android.view.View;
@@ -22,6 +22,30 @@ public class ItemMainViewModel extends BaseObservable {
     public  String getTextDate(){
         return data.getTitle();
     }
+    public  String getNguoiXuly(){
+        return  data.getAssignerName();
+    }
+    public String getNgayTao(){
+        return  data.getTimeCreate();
+    }
+    public String getTinhTrangDuyet(){
+
+        return data.getStatusRequestName();
+    }
+    public String getTrangThaiCal(){
+        return data.getStatusApproveName();
+    }
+    public String getColorTinhTrangDuyet(){
+        if(data.getStatusApproveName().equalsIgnoreCase("Duyệt")){
+            return "#04A861";
+        }else if (data.getStatusApproveName().equalsIgnoreCase("Chờ duyệt")){
+            return  "#666666";
+        }else if (data.getStatusApproveName().equalsIgnoreCase("Từ chối")) {
+            return "#FF0000";
+        }else {
+            return "#424242";
+        }
+    }
     @BindingAdapter("imageUrl")
     public static void setImageUrl(ImageView imageView, String url) {
         Glide.with(imageView.getContext()).load(url).into(imageView);
@@ -31,8 +55,8 @@ public class ItemMainViewModel extends BaseObservable {
 
     }
 
-    public void setPeople(Data_GetInfoCLPharmacy people) {
-        data = people;
+    public void setData(Data_GetInfoCLPharmacy data) {
+        this.data = data;
     }
 
 }

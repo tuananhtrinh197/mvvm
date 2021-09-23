@@ -86,14 +86,14 @@ public class Retrofit_Resutl {
 
 
 
-    @Expose
-    private List<GetInfoCLPharmacy_showpictures> result_data = new ArrayList<>();
-
-    public List<GetInfoCLPharmacy_showpictures> getResult_data() {
-        return result_data;
-    }
-
-    public void setResult_data(List<GetInfoCLPharmacy_showpictures> result_) {
-        this.result_data = result_;
-    }
+//    @Expose
+//    private List<GetInfoCLPharmacy_showpictures> result_data = new ArrayList<>();
+//
+//    public List<GetInfoCLPharmacy_showpictures> getResult_data() {
+//        return result_data;
+//    }
+//
+//    public void setResult_data(List<GetInfoCLPharmacy_showpictures> result_) {
+//        this.result_data = result_;
+//    }
 }
